@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.title {
+  background-color: yellow;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  animation: show 2s;
+}
